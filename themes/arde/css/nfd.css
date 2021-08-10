@@ -7,20 +7,27 @@ body {
 .banner-center h2,
 .banner-center h1,
 .input input,
-.naranjo-claro-arde-bg  {
+.naranjo-claro-arde-bg,
+.titulo {
  font-family: "GT America Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /*Generalidades*/
-a {
-	border: 0;
-}
-*:focus {
-    outline: none;
-}
+a {border: 0;}
+section {padding: 30px;}
+*:focus {outline: none;}
 ::placeholder {color: white;}
 :-ms-input-placeholder {color: white;}
 ::-ms-input-placeholder {color: white;}
+.titulo {
+	font-size: 1.625em;
+	text-underline-position: under;
+	text-underline-offset: 10px;
+	text-decoration: underline;
+	margin: 30px;
+	margin-top: 0;
+	text-transform: uppercase;
+}
 
 /*Cabecera*/
 header[role="banner"] {
@@ -120,14 +127,43 @@ header[role="banner"] {
     color: white;
 }
 
-
+/*Seccion etiquetas*/
+#etiquetas {
+	background-color: #f7f7f7;
+	clear: both;
+	text-align: center;
+	padding-top: 30px;
+}
+#etiquetas .etiquetas-home {
+	width: 1000px;
+	margin: auto;
+}
+#etiquetas .etiquetas-home .v-popular{
+	font-size: 100% !important;
+}
+#etiquetas .popularity {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#etiquetas .popularity a {
+	display: inline-block;
+	margin: 10px;
+	border: 2px solid black;
+	padding: 10px 20px;
+	text-transform: capitalize;
+	border-radius: 30px;
+}
 
 
 /*footer*/
-	
 .naranjo-claro-arde-bg {
     background-color: #ffeee8;
     clear: both;
+}
+.naranjo-claro-arde-bg .row {
+	margin-bottom: 0;
 }
 .naranjo-arde {
     color: #f44d11;
@@ -144,4 +180,73 @@ header[role="banner"] {
 }
 .footer-arde {
     background-color: #3f3f3f;
+    clear: both;
+}
+
+
+/*documento destacad*/
+.documento-destacado {
+    width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+.documento-destacado a.image {
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+.documento-destacado a.image img {
+	border: 0;
+	padding: 0;
+	width: 100%;
+	pointer-events: none;
+	height: 400px;
+	object-fit: cover;
+}
+.documento-destacado .item.record {
+	display: flex;
+	flex-wrap: wrap;
+	height: 400px;
+}
+.documento-destacado > a {order: 1;}
+.documento-destacado h3 {order: 2;padding: 0 47px;height: 0;align-self: center;}
+.documento-destacado h3 a {color: white;}
+.documento-destacado p {order: 3;padding: 0 50px 0 50px;margin: 0;text-align: left;color: white;display: flex;align-items: center;background: #00000099;width: 100%;}
+
+
+
+/*Exposiciones*/
+#exposiciones .exhibit {
+	display: none;
+}
+#exposiciones .exhibit:nth-child(1),
+#exposiciones .exhibit:nth-child(2),
+#exposiciones .exhibit:nth-child(3) {
+	display: block !important;
+	margin: 20px;
+}
+#exposiciones .exposiciones-home {
+	    width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+.exposiciones {
+    display: flex;
+}
+.exposiciones a.image {
+	float: none;
+	margin: 0;
+	width: 100%;
+	height: 200px;
+}
+.exposiciones a.image img {
+	border: 0;
+	padding: 0;
+	width: 100%;
+	pointer-events: none;
+	object-fit: cover;
+	height: 200px;
+}
+.exposiciones .exhibit .image {
+	box-shadow: none;
 }

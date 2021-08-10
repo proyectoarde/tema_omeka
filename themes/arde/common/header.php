@@ -166,6 +166,22 @@
             </div>
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
+        <section id="etiquetas">
+            <h2 class="titulo">Etiquetas</h2>
+            <div class="etiquetas-home"></div>
+        </section>
+        <section  id="destacado">
+            <div class="documento-destacado">
+                <h2 class="titulo"><?php echo __('Featured Item'); ?></h2>
+                <?php echo random_featured_items(1); ?>
+            </div>
+        </section>
+        <section id="exposiciones">
+            <div class="exposiciones-home">
+                <h2 class="titulo">Exposiciones</h2>
+                <div class="exposiciones"></div>        
+            </div>
+        </section>
 
         <div id="wrap">
             <div class="menu-button button">Menu</div>
