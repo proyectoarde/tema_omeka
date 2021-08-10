@@ -106,15 +106,65 @@
     queue_js_file('jquery');
     echo head_js();
     ?>
+    <script src="https://kit.fontawesome.com/508691ae36.js" crossorigin="anonymous"></script>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
         <header role="banner">
-             <?php echo public_nav_main(array('role' => 'navigation')); ?>
+            <div class="banner-top">
+                <div class="logouno">
+                    <a href="https://proyectoarde.org/">
+                        <img src="/omeka/themes/arde/images/logo-arde-blanco.png" alt="">
+                    </a>
+                </div>
+                <div class="navegacion">
+                    <?php echo public_nav_main(array('role' => 'navigation')); ?>
+                </div>
+                <div class="redes">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/archivoarde/">
+                                <i class="nav-link fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/proyectoarde/">
+                                <i class="nav-link fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCY41bjhyICItR_XSAeP1Ilg">
+                                <i class="nav-link fab fa-youtube-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner-center">
+                <div class="logodos">
+                    <img src="/omeka/themes/arde/images/icono-comilla-arde.png" alt="">
+                </div>
+                <div class="nombre">
+                    <h1><?php echo link_to_home_page(theme_logo()); ?></h1>
+                    <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
+                    <h2><?php echo $homepageText; ?></h2>
+                    <?php endif; ?>
+                </div>
+                <div class="buscador">
+                    <div class="input">
+                        <input type="text" placeholder="Escribe tu búsqueda aquí...">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <p>ej. nombre documento, autoras, temática, tipo.</p>
+                    </div>
+                </div>
+            </div>
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
-            <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
         </header>
 
         <div id="wrap">

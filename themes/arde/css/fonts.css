@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "GT America";
+    src: url("../fonts/gt_america/gt_america_regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "GT America Mono";
+    font-weight: bold;
+    src: url("../fonts/gt_america_mono/gt_america_mono-regular.otf") format("opentype");
+  }
