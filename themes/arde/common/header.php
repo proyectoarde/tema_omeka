@@ -154,10 +154,13 @@
                 </div>
                 <div class="buscador">
                     <div class="input">
-                        <input type="text" placeholder="Escribe tu búsqueda aquí...">
+                        <form action="/omeka/search">
+                        <input type="text" name="query" placeholder="Escribe tu búsqueda aquí...">
+                        <input type="hidden" name="query_type" value="keyword">
                         <button type="submit" class="searchButton">
                             <i class="fa fa-search"></i>
                         </button>
+                        </form>
                     </div>
                     <div>
                         <p>ej. nombre documento, autoras, temática, tipo.</p>
@@ -166,20 +169,36 @@
             </div>
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
+
         <section id="etiquetas">
             <h2 class="titulo">Etiquetas</h2>
             <div class="etiquetas-home"></div>
         </section>
+
         <section  id="destacado">
             <div class="documento-destacado">
                 <h2 class="titulo"><?php echo __('Featured Item'); ?></h2>
                 <?php echo random_featured_items(1); ?>
             </div>
         </section>
+
         <section id="exposiciones">
             <div class="exposiciones-home">
                 <h2 class="titulo">Exposiciones</h2>
-                <div class="exposiciones"></div>        
+                <div class="exposiciones"></div>
+                <div class="ir-a-seccion text-right">
+                    <a href="<?php echo absolute_url(); ?>/exhibits">Ir a exposiciones &gt;</a>
+                </div>  
+            </div>
+        </section>
+
+        <section id="colecciones">
+            <div class="colecciones-home">
+                <h2 class="titulo">Colecciones</h2>
+                <div class="colecciones"></div>
+                <div class="ir-a-seccion text-right">
+                    <a href="<?php echo absolute_url(); ?>/collections/browse">Ir a todas las colecciones &gt;</a>
+                </div>  
             </div>
         </section>
 

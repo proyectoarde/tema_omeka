@@ -3,6 +3,7 @@
 /*Fuentes*/
 body {
   font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
+  color: #3f3f3f;
 }
 .banner-center h2,
 .banner-center h1,
@@ -24,8 +25,7 @@ section {padding: 30px;}
 	text-underline-position: under;
 	text-underline-offset: 10px;
 	text-decoration: underline;
-	margin: 30px;
-	margin-top: 0;
+	margin: 20px 0 60px 0;
 	text-transform: uppercase;
 }
 
@@ -112,7 +112,7 @@ header[role="banner"] {
     border: 0;
     background: transparent !important;
     padding: 20px;
-    width: 100%;
+    width: 86%;
 }
 .input i.fa.fa-search {
     font-size: 25px;
@@ -125,6 +125,9 @@ header[role="banner"] {
 }
 .buscador p {
     color: white;
+}
+.buscador form {
+	width: 100%;
 }
 
 /*Seccion etiquetas*/
@@ -161,6 +164,25 @@ header[role="banner"] {
 .naranjo-claro-arde-bg {
     background-color: #ffeee8;
     clear: both;
+}
+.justify-content-center {
+	text-align: center;
+	padding: 30px 0;
+}
+.text-md-left {
+    text-align: left!important;
+}
+.col-md-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+.text-light {
+    color: #f8f9fa!important;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
 }
 .naranjo-claro-arde-bg .row {
 	margin-bottom: 0;
@@ -222,8 +244,9 @@ header[role="banner"] {
 #exposiciones .exhibit:nth-child(1),
 #exposiciones .exhibit:nth-child(2),
 #exposiciones .exhibit:nth-child(3) {
-	display: block !important;
-	margin: 20px;
+	display: flex !important;
+	flex-wrap: wrap;
+	width: 30%;
 }
 #exposiciones .exposiciones-home {
 	    width: 1140px;
@@ -232,6 +255,7 @@ header[role="banner"] {
 }
 .exposiciones {
     display: flex;
+    justify-content: space-evenly;
 }
 .exposiciones a.image {
 	float: none;
@@ -249,4 +273,86 @@ header[role="banner"] {
 }
 .exposiciones .exhibit .image {
 	box-shadow: none;
+}
+.exposiciones .exhibit a.image {order: 1;}
+.exposiciones .exhibit h3 {
+	order: 2;
+	margin: 10px 0 0 0;
+}
+.exposiciones .exhibit h3 a {
+	color: #3f3f3f;
+}
+.exposiciones .exhibit p {order: 3;margin: 0;text-align: left;}
+
+.text-right {
+	margin-top: 60px;
+    text-align: right!important;
+}
+.ir-a-seccion a {
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: grey !important;
+}
+
+
+/*colecciones*/
+#colecciones {
+	background-color: #151515;
+}
+#colecciones .titulo {
+	color: white;
+}
+#colecciones .ir-a-seccion a {
+	color: white !important;
+	border-color: white;
+}
+#colecciones .colecciones-home {
+	width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+#colecciones .collection {
+	display: flex !important;
+	flex-wrap: wrap;
+	width: 30%;
+}
+.colecciones {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.colecciones a.image {
+	float: none;
+	margin: 0;
+	width: 100%;
+	height: 200px;
+}
+.colecciones a.image img {
+	border: 0;
+	padding: 0;
+	width: 100%;
+	pointer-events: none;
+	object-fit: cover;
+	height: 200px;
+}
+.collection .view-items-link {
+	display: none;
+}
+.colecciones .collection a.image {order: 1;}
+.colecciones .collection h3 {
+	order: 2;
+	margin: 10px 0 0 0;
+}
+.colecciones .collection h3 a {
+	color: white;
+}
+.colecciones .collection .collection-description {
+	order: 3;
+	margin: 0;
+	text-align: left;
+	color: white;
+}
+.collection {
+	margin-bottom: 40px;
 }
