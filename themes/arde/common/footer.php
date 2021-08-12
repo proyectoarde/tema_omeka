@@ -10,8 +10,7 @@
 <div class="naranjo-claro-arde-bg naranjo-arde mensaje-footer">
         <div class="row">
             <div class="footer-text">
-                <p>"La imagen arde en la destrucción, en el fuego que casi la carboniza, del cual sin embargo emergió y al cual ahora puede hacer imaginable. Arde en el fulgor, es decir, en la posibilidad visual que se abrió a partir de su misma extinción. Finalmente, la imagen arde de memoria, es decir, flamea aún incluso cuando ya es ceniza".</p>
-                <p class="gt-america mb-0">(Georges Didi-Huberman)</p>
+                <p><?php echo get_theme_option('Footer Text'); ?></p>
             </div>
         </div>
 </div>
@@ -38,7 +37,8 @@
 
                 <!-- Suscríbete-->
                 <div>
-                    <p class="text-uppercase text-light small"><?php echo get_theme_option('Footer Text'); ?>
+                    <p class="text-uppercase text-light small">MANTENTE INFORMADO INSCRIBIÉNDOTE
+A NUESTRA LISTA DE MAILS
 </p>
                 </div>
         
