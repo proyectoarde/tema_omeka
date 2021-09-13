@@ -154,8 +154,8 @@
                 </div>
                 <div class="buscador">
                     <div class="input">
-                        <form action="/omeka/search">
-                        <input type="text" name="query" placeholder="Escribe tu búsqueda aquí...">
+                        <form action="/omeka/items/browse">
+                        <input type="text" name="search" placeholder="Escribe tu búsqueda aquí...">
                         <input type="hidden" name="query_type" value="keyword">
                         <button type="submit" class="searchButton">
                             <i class="fa fa-search"></i>
@@ -214,5 +214,6 @@
                     <?php endif; ?>
                 </div>
             </nav>
+            
             <div id="content" role="main" tabindex="-1">
                 <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

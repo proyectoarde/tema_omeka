@@ -37,7 +37,7 @@
 
                 <!-- Suscríbete-->
                 <div>
-                    <p class="text-uppercase text-light small">MANTENTE INFORMADO INSCRIBIÉNDOTE
+                    <p class="text-uppercase text-light small">MANTENTE INFORMADO INSCRIBIÉNDOTE <br>
 A NUESTRA LISTA DE MAILS
 </p>
                 </div>

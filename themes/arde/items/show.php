@@ -1,5 +1,19 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
 
+
+<ul id="simple-pages-breadcrumbs" class="breadcrumb">
+    <li class="breadcrumb-link"><?php echo link_to_home_page(__('Home')); ?> </li>
+    <li class="breadcrumb-link"><?php echo link_to_collection_for_item(); ?> </li>
+    <li class="breadcrumb-link"><?php echo link_to_item(); ?></li>
+</ul>
+
+<?php echo item_search_filters(); ?>
+
+<?php echo get_specific_plugin_hook_output('Facets', 'public_facets', array('view' => $this)); ?>
+
+<?php echo pagination_links(); ?>
+
+
 <h1><?php echo metadata('item','rich_title', array('no_escape' => true)); ?></h1>
 
     <?php if (get_theme_option('Item FileGallery') == 0 && metadata('item', 'has files')): ?>
