@@ -2,7 +2,10 @@
 $pageTitle = __('Browse Items');
 echo head(array('title' => $pageTitle, 'bodyclass' => 'items browse'));
 ?>
-
+<ul id="simple-pages-breadcrumbs" class="breadcrumb">
+    <li class="breadcrumb-link"><?php echo link_to_home_page(__('Home')); ?> </li>
+    <li class="breadcrumb-link">Búsqueda </li>
+</ul>
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
 
 <nav class="items-nav navigation secondary-nav">

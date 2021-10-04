@@ -31,7 +31,7 @@
     <?php
     queue_css_file(array('iconfonts','style'));
     queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
-    queue_css_file(array('iconfonts', 'skeleton','nfd'));
+    queue_css_file(array('iconfonts', 'skeleton', 'slick', 'slick-theme', 'nfd'));
     echo head_css();
 
     echo theme_header_background();
@@ -104,6 +104,7 @@
     queue_js_file('globals');
     queue_js_file('default');
     queue_js_file('jquery');
+    queue_js_file('slick.min');
     echo head_js();
     ?>
     <script src="https://kit.fontawesome.com/508691ae36.js" crossorigin="anonymous"></script>
@@ -116,7 +117,7 @@
             <div class="banner-top">
                 <div class="logouno">
                     <a href="https://proyectoarde.org/">
-                        <img src="/omeka/themes/arde/images/logo-arde-blanco.png" alt="">
+                        <img src="<?php echo html_escape(public_url('themes/arde/')) ?>images/logo-arde-blanco.png" alt="">
                     </a>
                 </div>
                 <div class="navegacion">
@@ -144,17 +145,23 @@
             </div>
             <div class="banner-center">
                 <div class="logodos">
-                    <img src="/omeka/themes/arde/images/icono-comilla-arde.png" alt="">
+                    <img src="<?php echo html_escape(public_url('themes/arde/')) ?>images/icono-comilla-arde.png" alt="">
                 </div>
                 <div class="nombre">
-                    <h1><?php echo link_to_home_page(theme_logo()); ?></h1>
-                    <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
-                    <h2><?php echo $homepageText; ?></h2>
+                    <?php
+                    if (isset($title)) {
+                        $tituloPartes[] = strip_formatting($title);
+                    }
+                    $tituloPartes[] = option('titulo');
+                    ?>
+                    <h1><a href=""><?php echo implode(' ', $tituloPartes); ?></a></h1>
+                    <?php if ($homepageText = get_theme_option('site_title')): ?>
+                        <h2><?php echo $homepageText; ?></h2>
                     <?php endif; ?>
                 </div>
                 <div class="buscador">
                     <div class="input">
-                        <form action="/omeka/items/browse">
+                        <form action="<?php echo html_escape(public_url('items/browse/')) ?>">
                         <input type="text" name="search" placeholder="Escribe tu búsqueda aquí...">
                         <input type="hidden" name="query_type" value="keyword">
                         <button type="submit" class="searchButton">

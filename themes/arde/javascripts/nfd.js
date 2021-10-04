@@ -6,6 +6,9 @@ else if (
   (document.location.pathname.indexOf("/search") > -1) 
   || (document.location.pathname.indexOf("/find") > -1) 
   || (document.location.pathname.indexOf("items/browse") > -1)
+  || (document.location.pathname.indexOf("items/tags") > -1)
+  || (document.location.pathname.indexOf("/creators") > -1)
+  || (document.location.pathname.indexOf("/subjects") > -1)
   )
 {
   $("#etiquetas").css("display", "none");
@@ -18,7 +21,7 @@ else if (
   $(".logouno img").attr('src', '/omeka/themes/arde/images/arde-logo-color.png');
   $("header[role='banner']").css("height", "10px").css("background", "linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('/omeka/themes/arde/images/fondo-arde-v2-interior.jpg')").css({"maxHeight":"400px"}).css({"minHeight":"400px"});
 }
-else if ((document.location.pathname.indexOf("/collections/browse") > -1) || (document.location.pathname.indexOf("/creators") > -1)) {
+else if ((document.location.pathname.indexOf("/collections/browse") > -1)) {
   $(".logodos").css("display", "none");
   $("#etiquetas").css("display", "none");
   $("#destacado").css("display", "none");

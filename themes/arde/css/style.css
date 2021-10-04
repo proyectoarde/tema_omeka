@@ -149,7 +149,8 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  /* border: 0; */
+  }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -390,9 +391,10 @@ th {
     border-bottom: 1px dotted;
     text-decoration: none; }
     a img {
-      margin-bottom: -2px;
-      vertical-align: sub;
-      border: none; }
+      /* margin-bottom: -2px; */
+      /* vertical-align: sub; */
+      /* border: none; */
+      }
   p, ul, ol, dl {
     line-height: 24px;
     margin-bottom: 24px; }
@@ -1274,7 +1276,8 @@ th {
     border-bottom: 1px solid #ccc;
     margin-bottom: 1.33333em; }
   #itemfiles {
-    overflow: auto; }
+    /* overflow: auto; */
+    }
     #itemfiles:after {
       content: "";
       display: block;
@@ -1282,15 +1285,20 @@ th {
       width: 100%;
       clear: both; }
     #itemfiles a {
-      float: left;
-      margin-right: 1em;
-      overflow: visible;
-      border-bottom: 0;
-      margin-bottom: 24px;
-      box-sizing: border-box;
-      height: 120px; }
+      /* float: left; */
+      /* margin-right: 1em; */
+      /* overflow: visible; */
+      /* border-bottom: 0; */
+      /* margin-bottom: 24px; */
+      /* box-sizing: border-box; */
+      /* height: 120px; */
+      width: 50%;
+      }
       #itemfiles a img {
-        border: 1px solid #ccc; }
+        /* border: 1px solid #ccc; */
+        width: 50%;
+        margin: auto;
+        }
   .browse .collection {
     clear: both;
     border-top: 1px solid #ccc;
