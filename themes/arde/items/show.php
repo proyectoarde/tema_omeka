@@ -9,16 +9,23 @@
 #primary-nav {
     display: none;
 }
+#content {
+    width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+    float: none;
+}
 </style>
 
 
 <section id="archivos-presentacion">
-    <div>
+    <div class="cuerpo">
         <ul id="simple-pages-breadcrumbs" class="breadcrumb">
             <li class="breadcrumb-link"><?php echo link_to_home_page(__('Home')); ?> </li>
             <li class="breadcrumb-link"><?php echo link_to_collection_for_item(); ?> </li>
             <li class="breadcrumb-link"><?php echo link_to_item(); ?></li>
         </ul>
+        <br>
         <!-- The following prints a citation for this item. -->
         <?php echo metadata('item', array('Dublin Core', 'Type')); ?>
         <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
@@ -50,36 +57,153 @@
     <?php endif; ?>
 
 
-<?php echo all_element_texts('item'); ?>
 
 
-<!-- If the item belongs to a collection, the following creates a link to that collection. -->
-<?php if (metadata('item', 'Collection Name')): ?>
-<div id="collection" class="element">
-    <h3><?php echo __('Collection'); ?></h3>
-    <div class="element-text"><p><?php echo link_to_collection_for_item(); ?></p></div>
+
+
+    <div class="datos izquierda" style="overflow:auto;">
+        <div class="" style="float:left; width:70%;padding-right:2%;">
+            <h2 style="border-bottom: 2px solid;padding-bottom: 10px;letter-spacing: 2px;">DOCUMENTO</h2>
+
+            <!-- Descripción -->
+            <?php if (metadata('item', array('Dublin Core', 'Description'))): ?>
+                <p class="dato"><b>Descripción</b></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Description')); ?></p>
+            <?php endif; ?>
+            <!-- Fin Descripción -->
+
+            <!-- Autor -->
+            <?php if (metadata('item', array('Dublin Core', 'Creator'))): ?>
+                <p class="dato"><b>Autor</b></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Creator')); ?></p>
+            <?php endif; ?>
+            <!-- Fin Autor -->
+
+            <!-- Fecha -->
+            <?php if (metadata('item', array('Dublin Core', 'Date'))): ?>
+                <p class="dato"><b>Fecha</b></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Date')); ?></p>
+            <?php endif; ?>
+            <!-- Fin Fecha -->
+
+            <br>
+            <h2 style="border-bottom: 2px solid;padding-bottom: 10px;letter-spacing: 2px;">ADICIONAL</h2>
+
+            <table>
+                <!-- Colección -->
+                <?php if (metadata('item', 'Collection Name')): ?>
+                    <tr>
+                        <td><b><?php echo __('Collection'); ?></b></td>
+                        <td><?php echo link_to_collection_for_item(); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Colección -->
+
+                <!-- Tipo -->
+                <?php if (metadata('item', array('Dublin Core', 'Type'))): ?>
+                    <tr>
+                        <td><b>Tipo</b></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Type')); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Tipo -->
+
+                <!-- Editor -->
+                <?php if (metadata('item', array('Dublin Core', 'Publisher'))): ?>
+                    <tr>
+                        <td><b>Editor</b></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Publisher')); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Editor -->
+
+                <!-- Identificación -->
+                <?php if (metadata('item', array('Dublin Core', 'Identifier'))): ?>
+                    <tr>
+                        <td><b>Identificación</b></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Identificación -->
+
+                <!-- Fuente -->
+                <?php if (metadata('item', array('Dublin Core', 'Source'))): ?>
+                    <tr>
+                        <td><b>Fuente</b></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Source')); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Fuente -->
+
+                <!-- Idioma -->
+                <?php if (metadata('item', array('Dublin Core', 'Language'))): ?>
+                    <tr>
+                        <td><b>Idioma</b></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Language')); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Idioma -->
+
+                <!-- Relación -->
+                <?php if (metadata('item', array('Dublin Core', 'Relation'))): ?>
+                    <tr>
+                        <td><b>Relación</b></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Relation')); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Relación -->
+
+                <!-- Cobertura -->
+                <?php if (metadata('item', array('Dublin Core', 'Coverage'))): ?>
+                    <tr>
+                        <td><b>Cobertura</b></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Coverage')); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <!-- Fin Cobertura -->
+            </table>
+        </div>
+
+        <div class="datos derecha" style="float: right;padding-left:2%;width: 30%;" >
+               <!-- Derechos -->
+            <?php if (metadata('item', array('Dublin Core', 'Rights'))): ?>
+                <p class="dato"><b>Derechos</b></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></p>
+            <?php endif; ?>
+            <!-- Fin Derechos -->
+
+            <!-- Materias -->
+            <?php if (metadata('item', array('Dublin Core', 'Subject'))): ?>
+                <p class="dato"><b>Materias</b></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Subject'), array('delimiter' => ', ')); ?></p>
+            <?php endif; ?>
+            <!-- Fin Materias -->
+
+            <!-- The following prints a list of all tags associated with the item -->
+            <?php if (metadata('item', 'has tags')): ?>
+                <p class="dato"><b><?php echo __('Tags'); ?></b></p>
+                <p class="datotag"><?php echo tag_string('item'); ?></p>
+            <?php endif;?>
+
+            <!-- The following prints a citation for this item. -->
+                <!--<p class="dato"><b><?php //echo __('Citation'); ?></b></p>-->
+                <p class="dato"><b>Referencia bibliográfica</b></p>
+                <p><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></p>
+
+            <!-- Available output formats --> 
+            <p class="dato"><b><?php echo __('Output Formats'); ?></b></p>
+            <div class="element-text"><?php echo output_format_list(); ?></div>
+            <!-- Fin Available output formats --> 
 </div>
-<?php endif; ?>
 
-<!-- The following prints a list of all tags associated with the item -->
-<?php if (metadata('item', 'has tags')): ?>
-<div id="item-tags" class="element">
-    <h3><?php echo __('Tags'); ?></h3>
-    <div class="element-text"><?php echo tag_string('item'); ?></div>
-</div>
-<?php endif;?>
+        </div>
+    </div>
 
-<!-- The following prints a citation for this item. -->
-<div id="item-citation" class="element">
-    <h3><?php echo __('Citation'); ?></h3>
-    <div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
-</div>
 
-<!-- Available output formats --> 
-<div id="item-output-formats" class="element">
-    <h2><?php echo __('Output Formats'); ?></h2>
-    <div class="element-text"><?php echo output_format_list(); ?></div>
-</div>
+
+<!-- mostrar todo el dc -->
+<?php // echo all_element_texts('item'); ?>
+
 
 <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
@@ -102,7 +226,35 @@
       centerMode: true,
       variableWidth: true
   });
+
+
+    $("#item-images a").each(function() {
+        var urldoc = $('#item-images a').attr('href');
+        if (this.href.indexOf('.pdf') != -1) {
+            $(this).css("display","none");
+            $("#item-images").append('<embed src="' + urldoc + ' " width="100%" height="575" />');
+        } 
+        else if (this.href.indexOf('.doc') != -1) {
+            $(this).css("display","none");
+            $("#item-images").append('<iframe src="https://docs.google.com/gview?url=' + urldoc + '&embedded=true" width="100%" height="575" />');
+        } 
+        else if (this.href.indexOf('.ogg') != -1) {
+           $(this).css("display","none");
+           $("#item-images").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/ogg" /></audio></div>');
+       } 
+       else if (this.href.indexOf('.mp3') != -1) {
+        $(this).css("display","none");
+        $("#item-images").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/mpeg" /></audio></div>');
+    } 
+    else if (this.href.indexOf('.m4a') != -1) {
+        $(this).css("display","none");
+        $("#item-images").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/mp4" /></audio></div>');
+    } 
+    else if (this.href.indexOf('.mp4') != -1) {
+     $(this).css("display","none");
+     $("#item-images").append('<div class="video"><video controls><source src="' + urldoc + '" type="video/mp4" /></video></div>');
+ } 
+});
 </script>
 <?php echo foot(); ?>
-<iframe src="https://docs.google.com/gview?url=https://infodi.cl/untitled.doc&embedded=true"></iframe>
-<embed src= "http://localhost/omeka/files/original/41675fd6860e0355105cbd32bf343a7f.pdf" width= "500" height= "375">
+

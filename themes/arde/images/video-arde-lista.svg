@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="71.248512mm"
+   height="71.248512mm"
+   viewBox="0 0 71.248512 71.248512"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="video-arde-lista.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="188.21429"
+     inkscape:cy="281.07143"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g828-26"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="860"
+     inkscape:window-x="1366"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(72.85491,-151.95164)">
+    <g
+       transform="translate(-32.865029,-24.020392)"
+       id="layer1-3"
+       inkscape:label="Capa 1">
+      <g
+         transform="translate(-51.404762,-8.3154762)"
+         id="g828">
+        <g
+           transform="translate(85.328125,-93.643601)"
+           id="layer1-1"
+           inkscape:label="Capa 1">
+          <g
+             transform="translate(-51.404762,-8.3154762)"
+             id="g828-2">
+            <g
+               transform="translate(36.191221,173.20759)"
+               id="layer1-6"
+               inkscape:label="Capa 1">
+              <g
+                 transform="translate(-51.404762,-8.3154762)"
+                 id="g828-26">
+                <rect
+                   y="121.35447"
+                   x="-7.2949414"
+                   height="71.248512"
+                   width="71.248512"
+                   id="rect869"
+                   style="opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.93680286;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                <g
+                   transform="translate(0.1889881,1.3607143)"
+                   id="g882"
+                   style="fill:#808080;fill-opacity:1">
+                  <path
+                     inkscape:connector-curvature="0"
+                     id="path884"
+                     d="m 20.147623,155.87732 c 0,-9.11931 0.08362,-16.58056 0.185818,-16.58056 0.368387,0 21.157236,16.28006 21.157236,16.56855 0,0.27702 -20.826212,16.59256 -21.17981,16.59256 -0.08978,0 -0.163244,-7.46125 -0.163244,-16.58055 z"
+                     style="fill:#808080;stroke-width:0.35277775;fill-opacity:1" />
+                </g>
+              </g>
+              <path
+                 inkscape:connector-curvature="0"
+                 id="path826-1"
+                 d=""
+                 style="fill:#000000;stroke-width:0.35277778" />
+            </g>
+          </g>
+          <path
+             inkscape:connector-curvature="0"
+             id="path826-0"
+             d=""
+             style="fill:#000000;stroke-width:0.35277778" />
+        </g>
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path826"
+         d=""
+         style="fill:#000000;stroke-width:0.35277778" />
+    </g>
+  </g>
+</svg>

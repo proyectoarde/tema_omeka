@@ -625,14 +625,7 @@ th {
     even when user is still typing.
   */
     box-shadow: none; }
-  button:focus,
-  button:active,
-  input:focus,
-  input:active,
-  select:focus,
-  select:active,
-  textarea:focus,
-  textarea:active {
+  input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
     box-shadow: #333 0 0 7px;
     /* for Opera */
     z-index: 1; }

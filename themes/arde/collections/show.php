@@ -52,11 +52,16 @@ $totalItems = metadata('collection', 'total_items');
             <?php $itemTitle = metadata('item', 'display_title'); ?>
             <div class="item hentry">
 
-                <?php if (metadata('item', 'has thumbnail')): ?>
+<!--                 <?php //if (metadata('item', 'has thumbnail')): ?>
                     <div class="item-img">
-                        <?php echo link_to_item(item_image(null, array('alt' => $itemTitle))); ?>
+                        <?php //echo link_to_item(item_image(null, array('alt' => $itemTitle))); ?>
                     </div>
-                <?php endif; ?>
+                <?php //endif; ?> -->
+                    <?php if (metadata('item', 'has files')): ?>
+    <div class="item-img">
+        <?php echo link_to_item(item_image()); ?>
+    </div>
+    <?php endif; ?>
 
                 <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet' => 250))): ?>
                 <div class="item-description">

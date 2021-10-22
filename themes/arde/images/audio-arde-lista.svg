@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="71.248512mm"
+   height="71.248512mm"
+   viewBox="0 0 71.248512 71.248512"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="audio-arde-lista.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="258.92857"
+     inkscape:cy="43.214287"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g828"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="860"
+     inkscape:window-x="1366"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(91.564732,-89.018601)">
+    <g
+       transform="translate(-32.865029,-24.020392)"
+       id="layer1-3"
+       inkscape:label="Capa 1">
+      <g
+         transform="translate(-51.404762,-8.3154762)"
+         id="g828">
+        <rect
+           y="121.35447"
+           x="-7.2949414"
+           height="71.248512"
+           width="71.248512"
+           id="rect869"
+           style="opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.93680286;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path830"
+           d="m 42.434473,173.39277 c -0.362613,-0.43692 -0.226487,-0.78919 0.783865,-2.02848 4.337721,-5.3206 6.356911,-12.13343 5.536146,-18.67917 -0.616148,-4.91386 -2.226459,-8.74793 -5.315423,-12.65577 -1.137162,-1.43861 -1.327171,-1.8793 -0.987019,-2.28916 0.731816,-0.88178 1.287889,-0.56761 3.004146,1.69729 3.609255,4.76304 5.226851,9.68005 5.251563,15.9632 0.02582,6.56697 -1.648153,11.63044 -5.457497,16.5079 -1.651798,2.11495 -2.097377,2.34981 -2.815781,1.48419 z m -24.596563,-5.54375 -5.366935,-5.36693 -3.5470613,-0.14247 -3.5470581,-0.14246 0.096,-6.39686 0.096,-6.39685 3.5277751,-0.0987 3.5277703,-0.0987 5.556254,-5.54156 5.55625,-5.54155 v 17.54655 c 0,9.65061 -0.119713,17.54656 -0.266029,17.54656 -0.146316,0 -2.681148,-2.41512 -5.632959,-5.36693 z m 19.392738,0.38291 c -0.659306,-0.67094 -0.539736,-1.32314 0.460513,-2.51187 0.495818,-0.58924 1.293477,-1.84491 1.772578,-2.79036 2.86978,-5.66325 2.391032,-12.14775 -1.28421,-17.39433 -1.121498,-1.60099 -1.331923,-2.12665 -1.007699,-2.51731 0.225386,-0.27157 0.631941,-0.49377 0.903456,-0.49377 0.651009,0 3.078022,3.78532 4.038406,6.29856 0.960738,2.51415 1.306411,7.96834 0.67696,10.68138 -0.970485,4.18295 -4.532112,9.77374 -5.560004,8.7277 z m -6.783698,-6.82527 c -0.348622,-0.42006 -0.25492,-0.87554 0.485969,-2.36232 1.228404,-2.46508 1.236871,-4.8789 0.02512,-7.15791 -0.692859,-1.3031 -0.801673,-1.78881 -0.485969,-2.16921 0.741214,-0.89311 1.316048,-0.51217 2.321299,1.53832 1.568782,3.19997 1.317678,6.80676 -0.675404,9.70139 -0.760723,1.10482 -1.060386,1.18547 -1.670999,0.44973 z"
+           style="fill:#808080;fill-opacity:1;stroke-width:0.35277778" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path826"
+         d=""
+         style="fill:#000000;stroke-width:0.35277778" />
+    </g>
+  </g>
+</svg>

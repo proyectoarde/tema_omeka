@@ -3,11 +3,11 @@
         display: none;
     }
     #content {
-    width: 100% !important;
-    max-width: 1140px;
-    margin: auto;
-    margin-right: auto !important;
-    float: none !important;
+        width: 100% !important;
+        max-width: 1140px;
+        margin: auto;
+        margin-right: auto !important;
+        float: none !important;
 }
 </style>
 
