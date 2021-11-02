@@ -10,7 +10,8 @@
     display: none;
 }
 #content {
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     margin: auto;
     padding: 40px 0;
     float: none;
@@ -61,8 +62,8 @@
 
 
 
-    <div class="datos izquierda" style="overflow:auto;">
-        <div class="" style="float:left; width:70%;padding-right:2%;">
+    <div class="datos" style="overflow:auto;">
+        <div class="datos izquierda" style="float:left; width:70%;padding-right:2%;">
             <h2 style="border-bottom: 2px solid;padding-bottom: 10px;letter-spacing: 2px;">DOCUMENTO</h2>
 
             <!-- Descripción -->

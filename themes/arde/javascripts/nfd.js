@@ -1,6 +1,9 @@
 if(location.pathname == "/") {
 // if (document.location.pathname.split(/\/(?=.)/).length == 2) {
   $("#wrap").css("display", "none");
+  $(".nombre h2").css("display","block");
+  //$(".nombre h1 a").append("<h2>Memoria de prácticas y procesos</h2>");
+
 }
 else if (
   (document.location.pathname.indexOf("/search") > -1) 
@@ -78,3 +81,10 @@ $('#destacado > div > div > a > img[src*="fallback-file"]').attr("src", "/themes
 $('#content > div > div > div.item-img > a > img[src*="fallback-video"]').attr("src", "/themes/arde/images/video-arde-lista.svg");
 $('#content > div > div > div.item-img > a > img[src*="fallback-audio"]').attr("src", "/themes/arde/images/audio-arde-lista.svg");
 $('#content > div > div > div.item-img > a > img[src*="fallback-file"]').attr("src", "/themes/arde/images/pdf-arde-lista.svg");
+
+
+$('.menuu-mobile').click(function() {
+  $('.menu-mobile').toggle('slow', function() {
+    // Animation complete.
+  });
+});

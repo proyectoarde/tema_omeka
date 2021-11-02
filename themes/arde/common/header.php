@@ -120,9 +120,36 @@
                         <img src="<?php echo html_escape(public_url('themes/arde/')) ?>images/logo-arde-blanco.png" alt="">
                     </a>
                 </div>
+
                 <div class="navegacion">
                     <?php echo public_nav_main(array('role' => 'navigation')); ?>
                 </div>
+                <div class="movil">
+                    <ul class="movil menu-mobile navbar-nav mr-auto navbar-collapse collapse show" id="menu-navbar" style="">                        
+                      <li class="nav-item">
+                        <a class="nav-link navbar-arde" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-arde" href="/collections/browse">Colecciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-arde" href="/exhibits">Exposiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-arde" href="https://proyectoarde.org/">Editorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-arde" href="https://proyectoarde.org/?post_type=page&p=42">Materiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-arde" href="https://proyectoarde.org/quienes-somos/">Quienes Somos</a>
+                    </li>
+                  </ul>
+                </div>
+                 <button class="navbar-toggler collapsed movil menuu-mobile" type="button" data-toggle="collapse" data-target="#menu-navbar" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                 <div class="redes">
                     <ul>
                         <li>
@@ -148,14 +175,8 @@
                     <img src="<?php echo html_escape(public_url('themes/arde/')) ?>images/icono-comilla-arde.png" alt="">
                 </div>
                 <div class="nombre">
-                    <?php
-                    if (isset($title)) {
-                        $tituloPartes[] = strip_formatting($title);
-                    }
-                    $tituloPartes[] = option('titulo');
-                    ?>
-                    <h1><a href=""><?php echo implode(' ', $tituloPartes); ?></a></h1>
-                    <?php if ($homepageText = get_theme_option('site_title')): ?>
+                    <h1><a href=""><?php echo implode(' &middot; ', $titleParts); ?></a></h1>
+                    <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
                         <h2><?php echo $homepageText; ?></h2>
                     <?php endif; ?>
                 </div>
