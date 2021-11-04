@@ -869,6 +869,19 @@ li.pagination_previous a {
 	#etiquetas .popularity {
 		padding: 0;
 	}
+	.pagination-nav ul.pagination {
+		margin-top: 20px;
+	}
+	ul.navigation li {
+		border-radius: 0;
+		border-bottom: 0;
+	}
+	ul.navigation li,
+	ul.navigation li a
+	{
+		width: 100%;
+		line-height: 40px;
+	}
 
 }
 
