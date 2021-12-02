@@ -1243,10 +1243,11 @@ th {
   #collection-items a.view-items-link {
     margin: 24px 0;
     display: inline-block;
-    background-color: #000;
+    background-color: #f14d11;
     color: #fff;
-    padding: 6px;
-    border-bottom: 0; }
+    padding: 6px 25px;
+    border-bottom: 0;
+    }
   .browse .item {
     overflow: hidden;
     border-top: 1px solid #ccc;
@@ -1289,8 +1290,8 @@ th {
       }
       #itemfiles a img {
         /* border: 1px solid #ccc; */
-        width: 50%;
-        margin: auto;
+        width: 800px;
+        margin: 15px;
         }
   .browse .collection {
     clear: both;

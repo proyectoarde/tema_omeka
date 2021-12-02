@@ -229,33 +229,49 @@
   });
 
 
-//     $("#item-images a").each(function() {
-//         var urldoc = $('#item-images a').attr('href');
-//         if (this.href.indexOf('.pdf') != -1) {
-//             $(this).css("display","none");
-//             $("#item-images").append('<embed src="' + urldoc + ' " width="100%" height="575" />');
-//         } 
-//         else if (this.href.indexOf('.doc') != -1) {
-//             $(this).css("display","none");
-//             $("#item-images").append('<iframe src="https://docs.google.com/gview?url=' + urldoc + '&embedded=true" width="100%" height="575" />');
-//         } 
-//         else if (this.href.indexOf('.ogg') != -1) {
-//            $(this).css("display","none");
-//            $("#item-images").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/ogg" /></audio></div>');
-//        } 
-//        else if (this.href.indexOf('.mp3') != -1) {
-//         $(this).css("display","none");
-//         $("#item-images").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/mpeg" /></audio></div>');
-//     } 
-//     else if (this.href.indexOf('.m4a') != -1) {
-//         $(this).css("display","none");
-//         $("#item-images").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/mp4" /></audio></div>');
-//     } 
-//     else if (this.href.indexOf('.mp4') != -1) {
-//      $(this).css("display","none");
-//      $("#item-images").append('<div class="video"><video controls><source src="' + urldoc + '" type="video/mp4" /></video></div>');
-//  } 
-// });
+    $(".slick-slide a").each(function() {
+        //console.log($(this).attr('href'));
+
+        var urldoc = $(this).attr('href');
+        var encodedUrl = encodeURIComponent(urldoc);
+        if (this.href.indexOf('.pdf') != -1) {
+            $(this).html('<embed src="' + urldoc + ' " height="500px" />');
+        } 
+        else if (this.href.indexOf('.mp4') != -1) {
+            $(this).html('<div class="video"><video controls><source src="' + urldoc + '" type="video/mp4" height="500px" /></video></div>');
+        }
+        //LLAMADO A IMAGEN ORIGINAL EN CARROUSEL DE IMAGENES
+        else if (this.href.indexOf('.png') != -1) {
+            $(this).html('<div><img class="test" src="' + urldoc + '" /></div>');
+        }
+        else if (this.href.indexOf('.jpg') != -1) {
+            $(this).html('<div><img class="test" src="' + urldoc + '" /></div>');
+        } 
+        else if (this.href.indexOf('.JPG') != -1) {
+            $(this).html('<div><img class="test" src="' + urldoc + '" /></div>');
+        }
+
+        else if ((this.href.indexOf('.docx') != -1) || (this.href.indexOf('.doc') != -1)) {
+            $(this).html('<iframe src="https://docs.google.com/gview?url=' + encodedUrl + '&embedded=true" height="500px" />');
+        } 
+     //     else if (this.href.indexOf('.doc') != -1) {
+     //         $(this).css("display","none");
+     //         $(".slick-slide").append('<iframe src="https://docs.google.com/gview?url=' + urldoc + '&embedded=true" width="100%" height="575" />');
+     //     } 
+     //     else if (this.href.indexOf('.ogg') != -1) {
+     //        $(this).css("display","none");
+     //        $(".slick-slide").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/ogg" /></audio></div>');
+     //    } 
+     //    else if (this.href.indexOf('.mp3') != -1) {
+     //     $(this).css("display","none");
+     //     $(".slick-slide").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/mpeg" /></audio></div>');
+     // } 
+     // else if (this.href.indexOf('.m4a') != -1) {
+     //     $(this).css("display","none");
+     //     $(".slick-slide").append('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/mp4" /></audio></div>');
+     // } 
+     
+ });
 </script>
 <?php echo foot(); ?>
 

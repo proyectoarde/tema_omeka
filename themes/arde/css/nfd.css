@@ -17,6 +17,7 @@ body {
 .item-description h2 {
  font-family: "GT America Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
 .item-description h2 a {
 	color: rgb(63, 63, 63) ;
 }
@@ -48,7 +49,7 @@ input:focus {outline: none;box-shadow: 0 0;}
 	text-underline-position: under;
 	text-underline-offset: 10px;
 	text-decoration: underline;
-	margin: 20px 0 60px 0;
+	margin: 19px 0 35px 0;
 	text-transform: uppercase;
 }
 
@@ -246,6 +247,7 @@ header[role="banner"] {
 	padding: 10px 20px;
 	text-transform: capitalize;
 	border-radius: 30px;
+	color: black;
 }
 
 
@@ -341,6 +343,10 @@ header[role="banner"] {
 }
 
 /*documento destacad*/
+section#destacado {
+    background-color: #f7f7f7;
+    padding-bottom: 90px !important;
+}
 .documento-destacado {
     max-width: 1100px;
     width: 100%;
@@ -359,6 +365,7 @@ header[role="banner"] {
 	pointer-events: none;
 	height: 400px;
 	object-fit: cover;
+	filter: brightness(0.5);
 }
 .documento-destacado .item.record {
 	display: flex;
@@ -366,9 +373,9 @@ header[role="banner"] {
 	height: 400px;
 }
 .documento-destacado > a {order: 1;}
-.documento-destacado h3 {order: 2;padding: 0 47px;height: 0;align-self: center;}
+.documento-destacado h3 {order: 2;padding: 0 47px;height: 0;align-self: center;z-index: 1;}
 .documento-destacado h3 a {color: white;text-shadow: -5px 4px 25px black;}
-.documento-destacado p {order: 3;padding: 0 50px 0 50px;margin: 0;text-align: left;color: white;display: flex;align-items: center;background: #00000099;width: 100%;}
+.documento-destacado .item.record p {order: 3;padding: 0 50px 0 50px;margin: 0;text-align: left;color: white;display: flex;align-items: center;background: #00000099;width: 100%;position: relative;padding: 47px;}
 
 
 /*exposicion destacada*/
@@ -455,11 +462,25 @@ header[role="banner"] {
 	margin-top: 60px;
     text-align: right!important;
 }
+.ir-a-seccion {
+	width: 100%;
+}
+.item-description .ir-a-seccion {
+	width: auto;
+	margin: auto;
+	margin-right: 40px;
+	right: 0;
+	position: absolute;
+}
 .ir-a-seccion a {
     border: 2px solid grey;
     border-radius: 20px;
     padding: 7px 15px;
     color: grey !important;
+}
+.item-description .ir-a-seccion a {
+    border: 2px solid white;
+    color: white !important;
 }
 
 
@@ -681,9 +702,91 @@ li.pagination_previous a {
 .movil {
 	display: none;
 }
+.slick-slide a,
+.slick-slide embed,
+.slick-slide iframe {
+    width: 1100px;
+}
+#search-container {
+    display: none;
+}
 
 
 
+
+/* editorial */
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row {
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.col-md-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.document-image {
+    padding-top: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: top;
+    background-color: #f44d11;
+}
+.bajada-post, .fecha-post {
+    color: #b1b1b0;
+}
+.small-70 {
+    font-size: 70%;
+    line-height: 1.5em;
+}
+.gt-america-mono {
+    font-family: "GT America Mono",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+#editorial a:hover {
+    color: #f44d11 !important; 
+}
+.text-center {
+    text-align: center!important;
+}
+.row.titulo-colecciones-home div {
+    width: 100%;
+}
+#editorial .container {
+	max-width: 1100px;
+	width: 100%;
+}
+.bajada-titulos-inicio {
+	font-size: 18px;
+	margin-top: 0;
+}
 
 
 
@@ -693,6 +796,9 @@ li.pagination_previous a {
 @media (max-width: 767px) {
 	.movil {
 		display: block;
+	}
+	.slick-slide embed {
+    	width: 400px;
 	}
 	ul.movil {
 		display: none;

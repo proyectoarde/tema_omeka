@@ -1,3 +1,4 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <!DOCTYPE html>
 <html lang="<?php echo get_html_lang(); ?>">
 <head>
@@ -203,9 +204,15 @@
             <div class="etiquetas-home"></div>
         </section>
 
+        <section id="editorial">
+              <div class="editorial-home"></div>
+        </section>
+
         <section  id="destacado">
             <div class="documento-destacado">
-                <h2 class="titulo"><?php echo __('Featured Item'); ?></h2>
+                <!-- <h2 class="titulo"><?php echo __('Featured Item'); ?></h2> -->
+                <h2 class="titulo">Documento Destacado</h2>
+                <p class="bajada-titulos-inicio mx-auto gt-america text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia maxime, eaque molestias dolorum, nemo laborum nisi.</p>
                 <?php echo random_featured_items(1); ?>
             </div>
         </section>
@@ -213,6 +220,7 @@
         <section id="exposiciones">
             <div class="exposiciones-home">
                 <h2 class="titulo">Exposiciones</h2>
+                <p class="bajada-titulos-inicio mx-auto gt-america text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia maxime, eaque molestias dolorum, nemo laborum nisi.</p>
                 <div class="exposiciones"></div>
                 <div class="ir-a-seccion text-right">
                     <a href="<?php echo absolute_url(); ?>/exhibits">Ir a exposiciones &gt;</a>
@@ -223,6 +231,7 @@
         <section id="colecciones">
             <div class="colecciones-home">
                 <h2 class="titulo">Colecciones</h2>
+                <p class="bajada-titulos-inicio mx-auto gt-america text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia maxime, eaque molestias dolorum, nemo laborum nisi.</p>
                 <div class="colecciones"></div>
                 <div class="ir-a-seccion text-right">
                     <a href="<?php echo absolute_url(); ?>/collections/browse">Ir a todas las colecciones &gt;</a>
