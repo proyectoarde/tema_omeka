@@ -1,12 +1,23 @@
+<section id="archivos-presentacion" class="oculto itembrowse" style="padding-bottom: 0;">
+    <div class="cuerpo" >
+        <ul id="simple-pages-breadcrumbs" class="breadcrumb">
+            <li class="breadcrumb-link"><?php echo link_to_home_page(__('Home')); ?> </li>
+            <li class="breadcrumb-link">Búsqueda </li>
+        </ul>
+    </div>
+</section>
 <?php
 $pageTitle = __('Browse Items');
 echo head(array('title' => $pageTitle, 'bodyclass' => 'items browse'));
 ?>
-<ul id="simple-pages-breadcrumbs" class="breadcrumb">
-    <li class="breadcrumb-link"><?php echo link_to_home_page(__('Home')); ?> </li>
-    <li class="breadcrumb-link">Búsqueda </li>
-</ul>
-<h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
+
+<style>
+#wrap {
+    max-width: 1100px;
+    padding: 0;
+}
+</style>
+
 
 <nav class="items-nav navigation secondary-nav">
     <?php echo public_nav_items(); ?>
@@ -23,10 +34,12 @@ $sortLinks[__('Title')] = 'Dublin Core,Title';
 $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 $sortLinks[__('Date Added')] = 'added';
 ?>
-<div id="sort-links">
-    <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+<div class="titbuscador">
+    <h2 class="titbuscar"><?php echo __('%s documentos encontrados', $total_results); ?></h2>
+    <div id="sort-links">
+        <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+    </div>
 </div>
-
 <?php endif; ?>
 
 <?php foreach (loop('items') as $item): ?>
@@ -68,3 +81,8 @@ $sortLinks[__('Date Added')] = 'added';
 <?php fire_plugin_hook('public_items_browse', array('items' => $items, 'view' => $this)); ?>
 
 <?php echo foot(); ?>
+
+<script>
+    $("header").after($(".oculto.itembrowse"));
+    $(".oculto.itembrowse").css("display","block");
+</script>

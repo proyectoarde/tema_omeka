@@ -69,21 +69,21 @@
             <!-- Descripción -->
             <?php if (metadata('item', array('Dublin Core', 'Description'))): ?>
                 <p class="dato"><b>Descripción</b></p>
-                <p style=""><?php echo metadata('item', array('Dublin Core', 'Description')); ?></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Description'), array('delimiter' => '<br /><br /> ')); ?></p>
             <?php endif; ?>
             <!-- Fin Descripción -->
 
             <!-- Autor -->
             <?php if (metadata('item', array('Dublin Core', 'Creator'))): ?>
                 <p class="dato"><b>Autor</b></p>
-                <p style=""><?php echo metadata('item', array('Dublin Core', 'Creator')); ?></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Creator'), array('delimiter' => '<br /> ')); ?></p>
             <?php endif; ?>
             <!-- Fin Autor -->
 
             <!-- Fecha -->
             <?php if (metadata('item', array('Dublin Core', 'Date'))): ?>
                 <p class="dato"><b>Fecha</b></p>
-                <p style=""><?php echo metadata('item', array('Dublin Core', 'Date')); ?></p>
+                <p style=""><?php echo metadata('item', array('Dublin Core', 'Date'), array('delimiter' => '<br /> ')); ?></p>
             <?php endif; ?>
             <!-- Fin Fecha -->
 
@@ -104,7 +104,7 @@
                 <?php if (metadata('item', array('Dublin Core', 'Type'))): ?>
                     <tr>
                         <td><b>Tipo</b></td>
-                        <td><?php echo metadata('item', array('Dublin Core', 'Type')); ?></td>
+                        <td><?php echo metadata('item', array('Dublin Core', 'Type'), array('delimiter' => '<br /> ')); ?></td>
                     </tr>
                 <?php endif; ?>
                 <!-- Fin Tipo -->
@@ -240,16 +240,10 @@
         else if (this.href.indexOf('.mp4') != -1) {
             $(this).html('<div class="video"><video controls><source src="' + urldoc + '" type="video/mp4" height="500px" /></video></div>');
         }
-        //LLAMADO A IMAGEN ORIGINAL EN CARROUSEL DE IMAGENES
-        else if (this.href.indexOf('.png') != -1) {
-            $(this).html('<div><img class="test" src="' + urldoc + '" /></div>');
-        }
-        else if (this.href.indexOf('.jpg') != -1) {
-            $(this).html('<div><img class="test" src="' + urldoc + '" /></div>');
+        else if (this.href.indexOf('.ogg') != -1) {
+            $(this).html('<div class="audio"><audio controls><source src="' + urldoc + '" type="audio/ogg" /></audio></div>');
         } 
-        else if (this.href.indexOf('.JPG') != -1) {
-            $(this).html('<div><img class="test" src="' + urldoc + '" /></div>');
-        }
+       
 
         else if ((this.href.indexOf('.docx') != -1) || (this.href.indexOf('.doc') != -1)) {
             $(this).html('<iframe src="https://docs.google.com/gview?url=' + encodedUrl + '&embedded=true" height="500px" />');

@@ -9,6 +9,9 @@
         margin-right: auto !important;
         float: none !important;
 }
+div#content > nav:first-of-type {
+    display: none;
+}
 </style>
 
 <?php
@@ -16,7 +19,7 @@ $pageTitle = __('Browse Collections');
 echo head(array('title' => $pageTitle, 'bodyclass' => 'collections browse'));
 ?>
 
-<h1><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h1>
+<!-- <h1><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h1> -->
 <?php echo pagination_links(); ?>
 
 <?php
@@ -31,10 +34,11 @@ $sortLinks[__('Date Added')] = 'added';
 
 <div class="collection">
 
-    <h2><?php echo link_to_collection(); ?></h2>
     <?php if ($collectionImage = record_image('collection')): ?>
         <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
     <?php endif; ?>
+    
+    <h2><?php echo link_to_collection(); ?></h2>
 
     <?php if (metadata('collection', array('Dublin Core', 'Description'))): ?>
     <div class="collection-description">

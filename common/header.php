@@ -176,16 +176,18 @@
                     <img src="<?php echo html_escape(public_url('themes/arde/')) ?>images/icono-comilla-arde.png" alt="">
                 </div>
                 <div class="nombre">
-                    <h1><a href=""><?php echo implode(' &middot; ', $titleParts); ?></a></h1>
+                    <h1><a href=""><?php echo implode(' <span class="borrar"> &middot; ', $titleParts); ?></a></h1>
                     <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
                         <h2><?php echo $homepageText; ?></h2>
                     <?php endif; ?>
                 </div>
                 <div class="buscador">
                     <div class="input">
-                        <form action="<?php echo html_escape(public_url('items/browse/')) ?>">
-                        <input type="text" name="search" placeholder="Escribe tu búsqueda aquí...">
+                        <form action="<?php echo html_escape(public_url('search')) ?>">
+                        <input type="text" name="query" placeholder="Escribe tu búsqueda aquí...">
                         <input type="hidden" name="query_type" value="keyword">
+                        <input type="hidden" name="record_types%5B%5D" value="Item">
+                        <input type="hidden" name="record_types%5B%5D" value="File">
                         <button type="submit" class="searchButton">
                             <i class="fa fa-search"></i>
                         </button>
@@ -212,12 +214,11 @@
             <div class="documento-destacado">
                 <!-- <h2 class="titulo"><?php echo __('Featured Item'); ?></h2> -->
                 <h2 class="titulo">Documento Destacado</h2>
-                <p class="bajada-titulos-inicio mx-auto gt-america text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia maxime, eaque molestias dolorum, nemo laborum nisi.</p>
                 <?php echo random_featured_items(1); ?>
             </div>
         </section>
 
-        <section id="exposiciones">
+        <!-- <section id="exposiciones">
             <div class="exposiciones-home">
                 <h2 class="titulo">Exposiciones</h2>
                 <p class="bajada-titulos-inicio mx-auto gt-america text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia maxime, eaque molestias dolorum, nemo laborum nisi.</p>
@@ -226,12 +227,12 @@
                     <a href="<?php echo absolute_url(); ?>/exhibits">Ir a exposiciones &gt;</a>
                 </div>  
             </div>
-        </section>
+        </section> -->
 
         <section id="colecciones">
             <div class="colecciones-home">
                 <h2 class="titulo">Colecciones</h2>
-                <p class="bajada-titulos-inicio mx-auto gt-america text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia maxime, eaque molestias dolorum, nemo laborum nisi.</p>
+                <!-- <p class="bajada-titulos-inicio mx-auto gt-america text-center">Exposición digital de las colecciones.</p> -->
                 <div class="colecciones"></div>
                 <div class="ir-a-seccion text-right">
                     <a href="<?php echo absolute_url(); ?>/collections/browse">Ir a todas las colecciones &gt;</a>

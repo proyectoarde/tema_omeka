@@ -12,6 +12,9 @@ else if (
   || (document.location.pathname.indexOf("items/tags") > -1)
   || (document.location.pathname.indexOf("/creators") > -1)
   || (document.location.pathname.indexOf("/subjects") > -1)
+  || (document.location.pathname.indexOf("/formats") > -1)
+  || (document.location.pathname.indexOf("/languages") > -1)
+  || (document.location.pathname.indexOf("/dates") > -1)
   )
 {
   $("#etiquetas").css("display", "none");
@@ -76,13 +79,24 @@ else {
   $("#editorial").css("display", "none");
 };
 
+$(".borrar").remove();
+
+
+//$("#colecciones-lista .collection h2 a").text($(this).text().substr(0, 75)+'...');
+
+if($("#dublin-core-source > h3:contains('Fuente')").length) {
+  $(".element-set #dublin-core-source").css("width","30%");
+} else {
+  $(".element-set #dublin-core-source").css("display","none");
+  $(".element-set #dublin-core-description").css("width","100%");
+};
 
 $(".etiquetas-home").load("/items/tags ul.popularity");
 $(".exposiciones").load("/exposiciones-destacadas div.exhibit");
 $(".colecciones").load("/colecciones-destacadas .collection");
 $(".editorial-home").load("https://proyectoarde.org div.listado-editorial.container.pb-5");
 
-$("#destacado p.item-description").append("<div class='ir-a-seccion text-right'><a href='http://archivo.proyectoarde.org/exhibits'>Ver documento &gt;</a></div>");
+$("#destacado .item.record").append("<div class='ir-a-seccion text-right'><a href='http://archivo.proyectoarde.org/exhibits'>Ver documento &gt;</a></div>");
 
 $('#destacado > div > div > a > img[src*="fallback-video"]').attr("src", "/themes/arde/images/video-arde.svg");
 $('#destacado > div > div > a > img[src*="fallback-audio"]').attr("src", "/themes/arde/images/audio-arde.svg");
@@ -92,6 +106,8 @@ $('#content > div > div > div.item-img > a > img[src*="fallback-video"]').attr("
 $('#content > div > div > div.item-img > a > img[src*="fallback-audio"]').attr("src", "/themes/arde/images/audio-arde-lista.svg");
 $('#content > div > div > div.item-img > a > img[src*="fallback-file"]').attr("src", "/themes/arde/images/pdf-arde-lista.svg");
 
+
+$('#destacado > div > div > div > a').attr("href",$('#destacado h3 > a').attr("href"));
 
 $('.menuu-mobile').click(function() {
   $('.menu-mobile').toggle('slow', function() {

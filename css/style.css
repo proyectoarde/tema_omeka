@@ -461,8 +461,9 @@ th {
     background-color: #fff; }
   .collection .image,
   .exhibit .image {
-    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
-    margin-left: 6px; }
+    /* box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1); */
+    margin-left: 6px;
+    }
   .record {
     clear: both; }
   .secondary-nav + .exhibit {
@@ -1290,8 +1291,8 @@ th {
       }
       #itemfiles a img {
         /* border: 1px solid #ccc; */
-        width: 800px;
-        margin: 15px;
+        width: 250px;
+        margin: 0 60px;
         }
   .browse .collection {
     clear: both;
@@ -1464,10 +1465,11 @@ th {
     margin-right: 0;
     padding: 40px 0; }
   #primary-nav {
-    width: 24.05063%;
+    width: 22.05063%;
     float: left;
-    margin-right: 1.26582%;
-    margin-left: 0; }
+    margin-right: 3.26582%;
+    margin-left: 0;
+    }
   #primary {
     padding-left: 0%; }
   #home #primary {
@@ -1554,18 +1556,21 @@ th {
   .pagination_list a, li.pagination_current {
     border: 1px solid #ccc;
     display: inline-block;
-    padding: 6px 10px;
+    padding: 6px 5px;
     vertical-align: top;
-    margin-right: 10px; }
+    margin-right: 8px;
+    }
   #sort-links {
     clear: none;
     float: right; }
     #sort-links ul {
-      margin-top: 18px;
-      padding-top: 12px; }
+      margin-top: 0px;
+      padding-top: 0px;
+      }
     #sort-links span, #sort-links li {
-      padding: 6px 0 6px 20px;
-      margin-right: 0; }
+      padding: 6px 0 6px 10px;
+      margin-right: 0;
+      }
   /* @end */
   /* @group ----- Forms ----- */
   div#contribution-type-form div.inputs {

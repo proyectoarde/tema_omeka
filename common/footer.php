@@ -19,78 +19,78 @@
 
 <div class="wrapper footer-arde" id="wrapper-footer">
 
+
     <div class="container">
-
         <div class="row">
-
             <div class="col-12 d-flex justify-content-center">
                 <a class="navbar-brand" href="https://proyectoarde.org">
                     <img class="logo-minisitio" src="https://proyectoarde.org/wp-content/themes/arde_wp/img/arde-logo-sin-frase.png" alt="arde">
                 </a>
-
             </div><!--col end -->
-
-        </div><!-- row end -->
-        <div class="row my-3 py-3">
-
-            <div class="col-md-10 text-center text-md-left">
-
-                <!-- Suscríbete-->
-                <div>
-                    <p class="text-uppercase text-light small">MANTENTE INFORMADO INSCRIBIÉNDOTE <br>
-A NUESTRA LISTA DE MAILS
-</p>
-                </div>
-        
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                  #mc_embed_signup{clear:left; width:100%;}
-                  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div style="text-align: left;" id="mc_embed_signup">
-                <form action="https://proyectoarde.us8.list-manage.com/subscribe/post?u=c0b79383e974802da4ae0ca34&amp;id=dfd24c9de3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-                    <div id="mc_embed_signup_scroll">
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Tu e-mail acá" required="">
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3ed0024a25f32863e0dacbf27_b6d928c419" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Suscribirse" name="Suscribirse" id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
-                </div>
-
-            </div><!--col end -->
-          <?php echo public_nav_main(array('role' => 'navigation')); ?>
-
         </div><!-- row end -->
 
-        <div class="row my-3">
 
-            <div class="col-md-10 text-light small text-center text-md-left">
-                <!-- Info Sitio-->
-                <div><img class="mr-2 arde-chico" src="https://proyectoarde.org/wp-content/themes/arde_wp/img/icono-footer-arde.png">©2021_proyecto_arde</div>
-            </div><!--col end -->
+        <div class="subfooter">
+            <div>
+                <div class="row my-3 py-3">
+                    <div class="col-md-10 text-center text-md-left">
+                        <!-- Suscríbete-->
+                        <div>
+                            <p class="text-uppercase text-light small">MANTENTE INFORMADO INSCRIBIÉNDOTE <br>A NUESTRA LISTA DE MAILS</p>
+                        </div>
+                        <form action="https://proyectoarde.us8.list-manage.com/subscribe/post?u=c0b79383e974802da4ae0ca34&amp;id=dfd24c9de3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                            <div id="mc_embed_signup_scroll">
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Tu e-mail acá" required="">
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <input type="text" style="position: absolute; left: -5000px;" name="b_3ed0024a25f32863e0dacbf27_b6d928c419" tabindex="-1" value="">
+                                <input type="submit" value="Suscribirse" name="Suscribirse" id="mc-embedded-subscribe" class="button">
+                            </div>
+                        </form>
+                    </div><!--col end -->
+                </div><!-- row end -->
+                <div class="row my-3">
+                    <div class="col-md-10 text-light small text-center text-md-left escritorio">
+                        <!-- Info Sitio-->
+                        <div class="credito"><img class="mr-2 arde-chico" src="https://proyectoarde.org/wp-content/themes/arde_wp/img/icono-footer-arde.png"> ©2021_proyecto_arde</div>
+                    </div><!--col end -->
 
-            <div class="col-md-2">
-                <!-- RRSS
-                <ul class="navbar-nav ml-auto d-block">
-                    <li class="nav-item d-md-inline d-block">
-                        <a class="nav-link d-md-inline d-block text-center text-md-left" href="https://www.facebook.com/archivoarde/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li class="nav-item d-md-inline d-block">
-                        <a class="nav-link d-md-inline d-block text-center text-md-left" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>-->
-                <!-- Menú RRSS -->
-                <nav class="ta-center ta-md-left d-md-block pt-5 pt-md-0">
-                <div class="menu-main-menu-container"><ul class="menu navbar-nav ml-auto d-block"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2752"><a title="nav-link" target="_blank" rel="nav-link" href="https://www.facebook.com/archivoarde/"><i class="nav-link fab fa-facebook-square"></i></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2753"><a title="nav-link" target="_blank" rel="nav-link" href="https://www.instagram.com/proyectoarde/"><i class="nav-link fab fa-instagram"></i></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2754"><a title="nav-link" target="_blank" rel="nav-link" href="https://www.youtube.com/channel/UCY41bjhyICItR_XSAeP1Ilg"><i class="nav-link fab fa-youtube-square"></i></a></li>
-</ul></div>                </nav>
-            </div><!--col end -->
 
+                </div>
+
+
+
+            </div>
+            <div>
+               <?php echo public_nav_main(array('role' => 'navigation')); ?>
+               <div class="redes">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/archivoarde/">
+                                <i class="nav-link fab fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/proyectoarde/">
+                                <i class="nav-link fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCY41bjhyICItR_XSAeP1Ilg">
+                                <i class="nav-link fab fa-youtube-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10 text-light small text-center text-md-left movil">
+                        <!-- Info Sitio-->
+                        <div class="credito"><img class="mr-2 arde-chico" src="https://proyectoarde.org/wp-content/themes/arde_wp/img/icono-footer-arde.png"> ©2021_proyecto_arde</div>
+                    </div><!--col end -->
+            </div>
         </div>
+
+
+
+
 
     </div><!-- container end -->
 
@@ -122,6 +122,57 @@ A NUESTRA LISTA DE MAILS
     </script>
     <script type="text/javascript" src="<?php echo html_escape(public_url('themes/arde/')) ?>javascripts/nfd.js"></script>
 
+
+
+
+
+
+
+
+<ul class="oculto navigation nav-menu"  aria-label="Navegar por:">
+    <li class="nav-item">
+        <a href="/creators/list" class="">Autores</a>
+    </li>
+    <li class="nav-item">
+        <a href="/subjects/list" class="">Palabras Clave</a>
+    </li>
+    <li class="nav-item">
+        <a href="/formats/list" class="">Formato</a>
+    </li>
+    <li class="nav-item">
+        <a href="/languages/list" class="">Idioma</a>
+    </li>
+    <li class="nav-item">
+        <a href="/dates/list" class="">Fechas</a>
+    </li>
+    <li class="nav-item">
+        <a href="/items/tags" class="">Etiquetas</a>
+    </li>
+</ul>
+<div id="search-container" role="search" class="with-advanced">
+        <form id="search-form" name="search-form" action="/search" method="get">    <input type="text" name="query" id="query" value="" title="Buscar">        <a href="#" class="advanced-toggle" aria-label=""></a>
+            <a href="#" class="show-advanced button">Advanced Search</a><div id="advanced-form" class="closed">
+                <fieldset id="query-types">
+                    <legend>Buscar utilizando este tipo de consulta:</legend>
+                    <label><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked">Palabra clave</label><br>
+                    <label><input type="radio" name="query_type" id="query_type-boolean" value="boolean">Booleano</label><br>
+                    <label><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match">Coincidencia exacta</label>        </fieldset>
+                    <fieldset id="record-types">
+                        <legend>Buscar solo este tipo de registros:</legend>
+                        <input type="checkbox" name="record_types[]" id="record_types-Item" value="Item" checked="checked"> <label for="record_types-Item">Elemento</label><br>
+                        <input type="checkbox" name="record_types[]" id="record_types-File" value="File" checked="checked"> <label for="record_types-File">Archivo</label><br>
+                        <input type="checkbox" name="record_types[]" id="record_types-Collection" value="Collection" checked="checked"> <label for="record_types-Collection">Colección</label><br>
+                    </fieldset>
+                    <p><a href="/items/search">Búsqueda avanzada (sólo elementos)</a></p>
+                </div>
+                <button name="submit_search" id="submit_search" type="submit" value="Buscar">Buscar</button></form>
+            </div>
+
+<script>
+    $("#primary-nav").empty();
+    $("#primary-nav").append($(".oculto.navigation.nav-menu"));
+    $("#primary-nav").append($("#search-container"));
+</script>
 
 </body>
 </html>

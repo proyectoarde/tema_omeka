@@ -88,8 +88,15 @@ $totalItems = metadata('collection', 'total_items');
 
 <?php echo foot(); ?>
 
+
+<div class="fondofoto">
+<?php if ($collectionImage = record_image('collection')): ?>
+        <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
+<?php endif; ?>
+</div>
+
 <script>
-    var fondo = $('#collection-items > div:nth-child(2) > div > a > img').attr('src');
+    var fondo = $('body > div.fondofoto > a > img').attr('src');
     $('header').css("background", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(" + fondo + ")");
     $("section#presentacion-coleccion").insertBefore("#wrap");
 </script>
