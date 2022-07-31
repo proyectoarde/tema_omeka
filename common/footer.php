@@ -79,6 +79,11 @@
                                 <i class="nav-link fab fa-youtube-square" aria-hidden="true"></i>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://github.com/proyectoarde">
+                                <i class="nav-link fab fa-github-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-10 text-light small text-center text-md-left movil">
