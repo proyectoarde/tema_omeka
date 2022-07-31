@@ -3,10 +3,10 @@ on: [push, workflow_dispatch]
 jobs:
 
   build:
-    name: Build
+    name: Actualizando
     runs-on: ubuntu-latest
     steps:
-    - name: executing remote ssh commands using password
+    - name: Actualizando la versión del tema de arde
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -14,5 +14,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          ls -alth
-          pwd
+          cd /var/www/html/themes/tema_omeka
+          git pull
+          chown -R www-data:www-data .
