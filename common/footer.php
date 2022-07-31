@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <a class="navbar-brand" href="https://proyectoarde.org">
-                    <img class="logo-minisitio" src="https://proyectoarde.org/wp-content/themes/arde_wp/img/arde-logo-sin-frase.png" alt="arde">
+                    <img class="logo-minisitio" src="https://editorial.proyectoarde.org/wp-content/themes/arde_wp/img/arde-logo-sin-frase.png" alt="arde">
                 </a>
             </div><!--col end -->
         </div><!-- row end -->
@@ -51,7 +51,7 @@
                 <div class="row my-3">
                     <div class="col-md-10 text-light small text-center text-md-left escritorio">
                         <!-- Info Sitio-->
-                        <div class="credito"><img class="mr-2 arde-chico" src="https://proyectoarde.org/wp-content/themes/arde_wp/img/icono-footer-arde.png"> ©2021_proyecto_arde</div>
+                        <div class="credito"><img class="mr-2 arde-chico" src="https://editorial.proyectoarde.org/wp-content/themes/arde_wp/img/icono-footer-arde.png"> ©2021_proyecto_arde</div>
                     </div><!--col end -->
 
 
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-md-10 text-light small text-center text-md-left movil">
                         <!-- Info Sitio-->
-                        <div class="credito"><img class="mr-2 arde-chico" src="https://proyectoarde.org/wp-content/themes/arde_wp/img/icono-footer-arde.png"> ©2021_proyecto_arde</div>
+                        <div class="credito"><img class="mr-2 arde-chico" src="https://editorial.proyectoarde.org/wp-content/themes/arde_wp/img/icono-footer-arde.png"> ©2021_proyecto_arde</div>
                     </div><!--col end -->
             </div>
         </div>
