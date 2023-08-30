@@ -126,7 +126,7 @@
                     <?php echo public_nav_main(array('role' => 'navigation')); ?>
                 </div>
                 <div class="movil">
-                    <ul class="movil menu-mobile navbar-nav mr-auto navbar-collapse collapse show" id="menu-navbar" style="">                        
+                    <ul class="movil menu-mobile navbar-nav mr-auto navbar-collapse collapse show" id="menu-navbar" style="">
                       <li class="nav-item">
                         <a class="nav-link navbar-arde" href="/">Inicio</a>
                     </li>
@@ -137,7 +137,7 @@
                         <a class="nav-link navbar-arde" href="/exhibits">Exposiciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-arde" href="https://proyectoarde.org/">Editorial</a>
+                        <a class="nav-link navbar-arde" href="https://editorial.proyectoarde.org/">Editorial</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navbar-arde" href="https://proyectoarde.org/?post_type=page&p=42">Materiales</a>
@@ -225,7 +225,7 @@
                 <div class="exposiciones"></div>
                 <div class="ir-a-seccion text-right">
                     <a href="<?php echo absolute_url(); ?>/exhibits">Ir a exposiciones &gt;</a>
-                </div>  
+                </div>
             </div>
         </section> -->
 
@@ -236,7 +236,7 @@
                 <div class="colecciones"></div>
                 <div class="ir-a-seccion text-right">
                     <a href="<?php echo absolute_url(); ?>/collections/browse">Ir a todas las colecciones &gt;</a>
-                </div>  
+                </div>
             </div>
         </section>
 
@@ -252,6 +252,6 @@
                     <?php endif; ?>
                 </div>
             </nav>
-            
+
             <div id="content" role="main" tabindex="-1">
                 <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
