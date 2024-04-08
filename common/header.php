@@ -134,13 +134,13 @@
                         <a class="nav-link navbar-arde" href="/collections/browse">Colecciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-arde" href="/exhibits">Exposiciones</a>
+                        <a class="nav-link navbar-arde" href="https://editorial.proyectoarde.org/">Lecturas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-arde" href="https://editorial.proyectoarde.org/">Editorial</a>
+                        <a class="nav-link navbar-arde" href="https://editorial.proyectoarde.org/los-archivos-laten/">Latidos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-arde" href="https://proyectoarde.org/?post_type=page&p=42">Materiales</a>
+                        <a class="nav-link navbar-arde" href="https://editorial.proyectoarde.org/materiales/">Materiales</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navbar-arde" href="https://proyectoarde.org/quienes-somos/">Quienes Somos</a>
